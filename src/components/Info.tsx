@@ -25,12 +25,15 @@ const Info = () => {
   const [selected, setSelected] = useState(arr[0]);
 
   return (
-    <section id="info" className="h-screen flex">
+    <section
+      id="info"
+      className="flex flex-col md:flex-row gap-[40px] md:gap-[10px] lg:gap-0 justify-between"
+    >
       <div className="left">
-        <h2 className="w-[540px] text-5xl font-semibold leading-10 tracking-[0.48px]">
+        <h2 className="md:w-[300px] lg:w-[540px] text-5xl md:text-4xl lg:text-5xl font-semibold leading-[4.5rem] sm:leading-10  tracking-[0.48px]">
           You do the business, we’ll handle the money
         </h2>
-        <p className="w-[440px] mt-[24px] text-white text-opacity-70 text-lg font-normal ">
+        <p className="md:w-[300px] lg:w-[440px] mt-[24px] text-white text-opacity-70 text-lg font-normal ">
           With the right credit card, you can improve your financial life by
           building credit, earning rewards and saving money. But with hundreds
           of credit cards on the market.
@@ -46,19 +49,23 @@ const Info = () => {
             onClick={() => {
               setSelected(t);
             }}
-            className={`content h-[100px] w-[440px] pl-[20px] py-[22px] rounded-2xl 
-            shadow flex items-center gap-5 cursor-pointer
+            className={`content min-h-[100px] md:w-[370px] lg:w-[440px] pl-[20px]  py-[22px] rounded-2xl 
+            shadow flex flex-row items-center gap-5 cursor-pointer
             ${selected === t && "bg-gradient-to-br from-[#494949]  to-zinc-900"}
         `}
           >
             <div className="left">
-              <img className="h-[64px] w-[94px]" src={t.icon} alt="" />
+              <img
+                className="md:h-[45px] md:w-[45px] lg:h-[64px] lg:w-[94px] "
+                src={t.icon}
+                alt="img"
+              />
             </div>
-            <div className="right">
+            <div className="right ">
               <h4 className="text-white text-lg font-semibold capitalize leading-normal tracking-tight">
                 {t.heading}
               </h4>
-              <p className="text-white text-opacity-70 w-[360px] text-normal text-base font-normal">
+              <p className="text-white text-opacity-70 md:w-[250px] lg:w-[360px] text-normal text-base font-normal">
                 {t.para}
               </p>
             </div>
