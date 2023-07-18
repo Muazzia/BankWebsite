@@ -2,14 +2,13 @@ import { useState } from "react";
 import { navLogo } from "../assets";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
+const navList = [
+  { title: "Home", link: "#" },
+  { title: "About", link: "#" },
+  { title: "Features", link: "#" },
+  { title: "Solution", link: "#" },
+];
 const Navbar = () => {
-  const navList = [
-    { title: "Home", link: "#" },
-    { title: "About", link: "#" },
-    { title: "Features", link: "#" },
-    { title: "Solution", link: "#" },
-  ];
-
   const [menuShow, setMenuShow] = useState(false);
   return (
     <nav className="flex justify-between ">

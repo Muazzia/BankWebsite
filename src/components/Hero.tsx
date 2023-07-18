@@ -1,12 +1,12 @@
 import { discount, robo } from "../assets";
 import Navbar from "./Navbar";
 
+const arr = [
+  { rating: "3800+", status: "User Active" },
+  { rating: "230+", status: "Trusted By User" },
+  { rating: "$230M+", status: "Transaction" },
+];
 const Hero = () => {
-  const arr = [
-    { rating: "3800+", status: "User Active" },
-    { rating: "230+", status: "Trusted By User" },
-    { rating: "$230M+", status: "Transaction" },
-  ];
   return (
     <section id="hero" className="min-h-screen   relative">
       <div className="wrapper max-w-[300px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[1000px] mx-auto pt-[15px] flex flex-col min-h-screen md:justify-between ">
@@ -62,8 +62,11 @@ const Hero = () => {
           </div>
         </div>
         <div className="bottom grid grid-cols-1 gap-[90px] md:gap-0 md:grid-cols-3 overflow-hidden justify-center items-center ">
-          {arr.map((t) => (
-            <div className="flex items-center flex-col md:flex-row gap-[25px]  justify-center">
+          {arr.map((t, i) => (
+            <div
+              key={i}
+              className="flex items-center flex-col md:flex-row gap-[25px]  justify-center"
+            >
               <h3 className=" text-white text-4xl md:text-2xl lg:text-4xl font-semibold ">
                 {t.rating}
               </h3>
