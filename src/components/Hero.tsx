@@ -8,7 +8,7 @@ const Hero = () => {
     { rating: "$230M+", status: "Transaction" },
   ];
   return (
-    <section id="hero" className="min-h-screen  bg-mBg relative">
+    <section id="hero" className="min-h-screen   relative">
       <div className="wrapper max-w-[300px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[1000px] mx-auto pt-[15px] flex flex-col min-h-screen md:justify-between ">
         <div>
           <Navbar />
