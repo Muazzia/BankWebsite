@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const [menuShow, setMenuShow] = useState(false);
   return (
-    <nav className="flex justify-between">
+    <nav className="flex justify-between ">
       <div className="left flex items-center gap-[4px]">
         <img src={navLogo} alt="navLogo" />
         <h1>
@@ -20,7 +20,7 @@ const Navbar = () => {
         </h1>
       </div>
       <div className="right flex items-center ">
-        <ul className="gap-[55px] hidden sm:flex">
+        <ul className="gap-[55px] hidden sm:flex   z-50 relative">
           {navList.map((l, i) => (
             <li key={i}>
               <a
@@ -45,9 +45,9 @@ const Navbar = () => {
               className="float-right"
               onClick={() => setMenuShow(false)}
             />
-            <ul className="flex flex-col mt-[20px] gap-7  ">
+            <ul className="flex flex-col mt-[20px] gap-7">
               {navList.map((l, i) => (
-                <li key={i}>
+                <li key={i} className="z-50 relative">
                   <a
                     href={l.link}
                     className="font-normal leading-tight text-opacity-70 text-white"
