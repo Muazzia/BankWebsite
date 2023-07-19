@@ -46,9 +46,7 @@ const Info = () => {
         {arr.map((t, i) => (
           <div
             key={i}
-            onClick={() => {
-              setSelected(t);
-            }}
+            onMouseEnter={() => setSelected(t)}
             className={`content min-h-[100px] md:w-[370px] lg:w-[440px] pl-[20px]  py-[22px] rounded-2xl 
             shadow flex flex-row items-center gap-5 cursor-pointer
             ${selected === t && "bg-gradient-to-br from-[#494949]  to-zinc-900"}

@@ -35,7 +35,7 @@ const Billing = () => {
   return (
     <section
       id="billing"
-      className="pt-[150px] flex gap-[40px] flex-col lg:flex-row  min-h-[120vh] "
+      className="pt-[150px] flex gap-[40px] flex-col lg:flex-row  "
     >
       <div className="l w-full sm:w-[50%] h-[550px] relative flex flex-col items-center gap-[30px] sm:block">
         <div
@@ -94,7 +94,7 @@ const Billing = () => {
           </div>
         </div>
       </div>
-      <div className="r md:w-full lg:w-[50%]  h-[550px] flex flex-col">
+      <div className="r md:w-full lg:w-[50%]  flex flex-col">
         <div>
           <h2 className="text-white text-5xl font-semibold leading-[5rem] tracking-wide mb-[24px]">
             Easily control your billing & invoicing.
