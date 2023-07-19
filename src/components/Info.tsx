@@ -54,18 +54,16 @@ const Info = () => {
             ${selected === t && "bg-gradient-to-br from-[#494949]  to-zinc-900"}
         `}
           >
-            <div className="left">
-              <img
-                className="md:h-[45px] md:w-[45px] lg:h-[64px] lg:w-[94px] "
-                src={t.icon}
-                alt="img"
-              />
-            </div>
+            <img
+              className="md:h-[45px] md:w-[45px] object-cover lg:h-[64px] lg:w-[94px] "
+              src={t.icon}
+              alt="img"
+            />
             <div className="right ">
               <h4 className="text-white text-lg font-semibold capitalize leading-normal tracking-tight">
                 {t.heading}
               </h4>
-              <p className="text-white text-opacity-70 md:w-[250px] lg:w-[360px] text-normal text-base font-normal">
+              <p className="text-white text-opacity-70 md:w-[250px] lg:w-[330px] text-normal text-base font-normal">
                 {t.para}
               </p>
             </div>

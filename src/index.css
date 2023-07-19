@@ -32,6 +32,19 @@
     );
   }
 
+  .borderGrd {
+    border: 1px solid;
+    border-color: radial-gradient(
+      64.33% 64.33% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    );
+  }
+
   .bluring {
     fill: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
     stroke-width: 1px;
