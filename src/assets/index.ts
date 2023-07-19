@@ -11,6 +11,10 @@ import netflix from "./netflix.png";
 import greenBall from "./green.png";
 import redPoly from "./redPoly.svg";
 import greenPoly from "./greenPoly.svg";
+import appStore from "./appstore.png";
+import google from "./google.png";
+import svgApple from "./svgAPple.svg";
+import svgGoogle from "./svgGoogle.svg";
 
 export {
   navLogo,
@@ -26,4 +30,8 @@ export {
   greenBall,
   redPoly,
   greenPoly,
+  appStore,
+  google,
+  svgApple,
+  svgGoogle,
 };

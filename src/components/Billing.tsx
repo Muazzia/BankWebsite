@@ -1,4 +1,14 @@
-import { greenBall, netflix, paypall, redBall, redPoly } from "../assets";
+import {
+  appStore,
+  google,
+  greenBall,
+  netflix,
+  paypall,
+  redBall,
+  redPoly,
+  svgApple,
+  svgGoogle,
+} from "../assets";
 
 const arr = [
   {
@@ -25,11 +35,11 @@ const Billing = () => {
   return (
     <section
       id="billing"
-      className="pt-[150px] flex gap-[40px] md:flex-col lg:flex-row  min-h-[120vh] "
+      className="pt-[150px] flex gap-[40px] flex-col lg:flex-row  min-h-[120vh] "
     >
-      <div className="l w-[50%] h-[550px] relative">
+      <div className="l w-full sm:w-[50%] h-[550px] relative flex flex-col items-center gap-[30px] sm:block">
         <div
-          className="p-[20px] w-[230px] h-[210px] flex flex-col justify-between bg-gradient-to-br from-[#8a8a8a] to-black rounded-lg ml-[250px] z-10 relative"
+          className="p-[20px] w-[230px] h-[210px] flex flex-col justify-between bg-gradient-to-br from-[#8a8a8a] to-black rounded-lg  sm:ml-[250px] z-10 relative"
           id="paypal"
         >
           <div className="top flex items-start gap-[12px] justify-start">
@@ -63,7 +73,7 @@ const Billing = () => {
             </button>
           </div>
         </div>
-        <div className="w-[335px] absolute top-[160px] h-[310px] rounded-lg bg-gradient-to-br from-[#8a8a8a] to-black p-[22px]">
+        <div className="w-[95%] sm:w-[335px] static sm:absolute top-[160px] h-[350px] sm:h-[310px] rounded-lg bg-gradient-to-br from-[#8a8a8a] to-black p-[22px]">
           <h3 className="mb-[30px] text-xl font-semibold">Last Transaction</h3>
           <div className="space-y-[30px]">
             {arr.map((t, i) => (
@@ -84,7 +94,7 @@ const Billing = () => {
           </div>
         </div>
       </div>
-      <div className="r md:w-full lg:w-[50%]  h-[550px] flex ">
+      <div className="r md:w-full lg:w-[50%]  h-[550px] flex flex-col">
         <div>
           <h2 className="text-white text-5xl font-semibold leading-[5rem] tracking-wide mb-[24px]">
             Easily control your billing & invoicing.
@@ -94,6 +104,18 @@ const Billing = () => {
             aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
             placerat.
           </p>
+        </div>
+        <div className="flex mt-[20px] gap-[20px]">
+          <img
+            src={svgApple}
+            alt=""
+            className="border border-gray-700 rounded-lg"
+          />
+          <img
+            src={svgGoogle}
+            alt=""
+            className="border border-gray-700 rounded-lg"
+          />
         </div>
       </div>
     </section>
